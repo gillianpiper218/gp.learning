@@ -1,0 +1,14 @@
+gp_dbt_learning:
+  outputs:
+    dv02_etl:
+      host: adb-7911151741964237.17.azuredatabricks.net
+      http_path: /sql/1.0/warehouses/0a00cf7afbed1a65
+      catalog: dv02_data_engineering
+      schema: gp_dbt_learning
+      threads: 4
+      auth_type: oauth
+      client_id: 3c83ee56-e489-4f6f-aa90-77200f1185f5
+      type: databricks
+      session_properties:
+        ANSI_MODE: TRUE
+  target: dv02_etl
